@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import Navbar from '../../components/Navbar';
-import { Bar } from 'react-chartjs-2';
 import Diagramma from "../../components/Diagramm"
 import Diagramm2 from "../../components/Diagramm2"
 
@@ -184,7 +183,7 @@ const Filter = () => {
                 labels: Object.keys(usersAddedByDate),
                 datasets: [
                     {
-                        label: 'Sanalik kiritilgan o\'quvchilar',
+                        label: 'Sanalik kiritilgan o`quvchilar',
                         data: Object.values(usersAddedByDate),
                         backgroundColor: 'rgba(75,192,192,0.2)',
                         borderColor: 'rgba(75,192,192,1)',

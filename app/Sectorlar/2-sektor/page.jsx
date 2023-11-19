@@ -139,7 +139,7 @@ const Filter = () => {
                 <div className="mb-4">
                     {Object.keys(usersAddedByDate).map((date) => (
                         <div key={date}>
-                            <h3 className='text-2xl font-bold poppins mb-5 mt-10'>{date} sanasida kiritilgan o'quvchilar:</h3>
+                            <h3 className='text-2xl font-bold poppins mb-5 mt-10'>{date} sanasida kiritilgan o`quvchilar:</h3>
                             <table className="main_table w-full shadow-xl">
                                 <thead className="green text-white font-bold poppins-2">
                                     <tr>
