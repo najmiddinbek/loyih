@@ -194,7 +194,7 @@ const Filter = () => {
         };
 
         fetchData();
-    }, [filteredMavzula]);
+    }, [filteredMavzula, usersAddedByDate]);
 
 
     return (
@@ -203,20 +203,20 @@ const Filter = () => {
                 <Navbar />
                 <div className="container">
                     <div className="mb-4">
-                        <h2 className="text-xl font-bold mb-2">Foizdagi o'zgarish</h2>
+                        <h2 className="text-xl font-bold mb-2">Foizdagi o`zgarish</h2>
                         {Object.keys(percentageIncreaseByDate).map((date) => (
                             <p key={date}>{date}: Avvalgi kundan %{percentageIncreaseByDate[date]} ga ko`p</p>
                         ))}
                     </div>
 
                     <div className="mb-4">
-                        <h2 className="text-xl font-bold mb-2">Sababli dars qoldirilgan o'quvchilar</h2>
-                        <p>{countSababli} ta o'quvchi sababli dars qoldirgan</p>
+                        <h2 className="text-xl font-bold mb-2">Sababli dars qoldirilgan o`quvchilar</h2>
+                        <p>{countSababli} ta o`quvchi sababli dars qoldirgan</p>
                         <p>Bu barcha oquvchilarning <b>{percentageSababli}%</b> ni tashkil etadi</p>
                     </div>
                     <div className="mb-4">
-                        <h2 className="text-xl font-bold mb-2">Sababsiz dars qoldirgan o'quvchilar</h2>
-                        <p> {countNotSababli} ta o'quvchi sababsiz dars qoldirgan</p>
+                        <h2 className="text-xl font-bold mb-2">Sababsiz dars qoldirgan o`quvchilar</h2>
+                        <p> {countNotSababli} ta o`quvchi sababsiz dars qoldirgan</p>
                         <p> Bu barcha oquvchilarning <b> {percentageNotSababli}%</b> ni tashkil etadi</p>
                     </div>
                 </div>

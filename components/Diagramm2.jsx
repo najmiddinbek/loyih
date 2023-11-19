@@ -246,7 +246,7 @@ const App = () => {
                 labels: Object.keys(usersAddedByDate),
                 datasets: [
                     {
-                        label: 'Sanalik kiritilgan o\'quvchilar',
+                        label: 'Sanalik kiritilgan o`quvchilar',
                         data: Object.values(usersAddedByDate),
                         backgroundColor: 'rgba(75,192,192,0.2)',
                         borderColor: 'rgba(75,192,192,1)',
@@ -257,23 +257,8 @@ const App = () => {
         };
 
         fetchData();
-    }, [filteredMavzula]);
-    const chartDataSababli = {
-        options: {
-            chart: {
-                id: 'percentage-sababli',
-            },
-            xaxis: {
-                categories: ['Sababsiz o`quvchilar foizi'],
-            },
-        },
-        series: [
-            {
-                name: 'series-1',
-                data: [percentageSababli],
-            },
-        ],
-    };
+    }, [filteredMavzula, usersAddedByDate]);
+
 
     const donutChartOptions = {
         chart: {
@@ -353,13 +338,13 @@ const App = () => {
                     <div className="mixed-chart">
                     </div>
                     <div className="mb-4">
-                        <h2 className="text-xl font-bold mb-2">Sababli dars qoldirilgan o'quvchilar</h2>
-                        <p>{countSababli} ta o'quvchi sababli dars qoldirgan</p>
+                        <h2 className="text-xl font-bold mb-2">Sababli dars qoldirilgan o`quvchilar</h2>
+                        <p>{countSababli} ta o`quvchi sababli dars qoldirgan</p>
                         <p>Bu barcha oquvchilarning <b>{percentageSababli}%</b> ni tashkil etadi</p>
                     </div>
                     <div className="mb-4">
-                        <h2 className="text-xl font-bold mb-2">Sababsiz dars qoldirgan o'quvchilar</h2>
-                        <p> {countNotSababli} ta o'quvchi sababsiz dars qoldirgan</p>
+                        <h2 className="text-xl font-bold mb-2">Sababsiz dars qoldirgan o`quvchilar</h2>
+                        <p> {countNotSababli} ta o`quvchi sababsiz dars qoldirgan</p>
                         <p> Bu barcha oquvchilarning <b> {percentageNotSababli}%</b> ni tashkil etadi</p>
                     </div>
                 </div>
